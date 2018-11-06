@@ -1,0 +1,38 @@
+{
+  "name": "family-book",
+  "version": "0.0.1",
+  "description": "App to build your own family book",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "jest",
+    "clean": "rm -rf build",
+    "start": "nodemon --exec babel-node src/server.js",
+    "build": "npx babel -d build src",
+    "server": "node build/server.js"
+  },
+  "keywords": [
+    "family",
+    "tree",
+    "book"
+  ],
+  "author": "Adolfo Sánchez-Barbudo Herrera",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "apollo-server": "^2.1.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^6.1.0",
+    "graphql": "^14.0.2",
+    "neo4j-driver": "^1.7.0",
+    "parse-bearer-token": "^1.0.0",
+    "paseto.js": "^0.1.2",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "nodemon": "^1.18.5"
+  }
+}
