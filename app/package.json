@@ -4,7 +4,7 @@
   "description": "App to build your own family book",
   "main": "src/server.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest src-tests --config=jest.config.js",
     "clean": "rm -rf build",
     "start": "nodemon --exec babel-node src/server.js",
     "build": "npx babel -d build src",
@@ -30,9 +30,13 @@
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
     "@babel/node": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "nodemon": "^1.18.5"
+    "@babel/preset-env": "^7.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "graphql-tester": "0.0.5",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.5",
+    "stoppable": "^1.0.7"
   }
 }
